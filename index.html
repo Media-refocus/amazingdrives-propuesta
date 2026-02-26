@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazing Drives — Propuesta Estratégica de Comunicación Digital 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red:#c8372d; --red-glow:#e8453a;
+  --red-dim:rgba(200,55,45,0.08); --red-border:rgba(200,55,45,0.18);
+  --gold:#d4a853; --gold-dim:rgba(212,168,83,0.08); --gold-border:rgba(212,168,83,0.18);
+  --green:#4a9e6d; --green-dim:rgba(74,158,109,0.10); --green-border:rgba(74,158,109,0.20);
+  /* Pillar brand colors */
+  --p-adr:#e8453a; --p-adr-dim:rgba(232,69,58,0.10); --p-adr-border:rgba(232,69,58,0.22);
+  --p-com:#4a9fd5; --p-com-dim:rgba(74,159,213,0.10); --p-com-border:rgba(74,159,213,0.22);
+  --p-lif:#d4a853; --p-lif-dim:rgba(212,168,83,0.10); --p-lif-border:rgba(212,168,83,0.22);
+  --p-exc:#a78bfa; --p-exc-dim:rgba(167,139,250,0.10); --p-exc-border:rgba(167,139,250,0.22);
+  --d1:#0a0a0a; --d2:#0e0e0e; --d3:#131313; --d4:#181818; --d5:#1e1e1e;
+  --tx:#e8e4df; --tx-mid:#b8b3ad; --tx-dim:#7a756f; --tx-bright:#f5f0eb;
+  --pink:#E1306C; --yt-red:#FF0000; --tk-cyan:#69C9D0;
+  --r:3px; --gap:1.5rem; --pc:1.75rem; --ps:6.5rem; --pw:5rem;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;font-size:18px;line-height:1.72;font-weight:300;color:var(--tx);background:var(--d1);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+strong{font-weight:500;color:var(--tx-bright);}
+a{color:inherit;}
+
+#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--red),var(--red-glow));width:0;z-index:9999;}
+
+nav{position:fixed;top:2px;left:0;right:0;background:rgba(10,10,10,0.92);backdrop-filter:blur(20px);height:50px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pw);z-index:1000;border-bottom:1px solid rgba(200,55,45,0.08);}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:0.9rem;letter-spacing:0.18em;color:var(--tx-dim);}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{font-family:'Bebas Neue',sans-serif;font-size:0.78rem;letter-spacing:0.12em;color:var(--tx-dim);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--red-glow);}
+
+.wrap{max-width:1140px;margin:0 auto;padding-left:var(--pw);padding-right:var(--pw);}
+.sec{padding:var(--ps) 0;}
+
+.eyebrow{font-family:'Bebas Neue',sans-serif;font-size:0.82rem;color:var(--red-glow);letter-spacing:0.3em;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.75rem;}
+.eyebrow::after{content:'';width:40px;height:1px;background:var(--red);opacity:0.35;flex-shrink:0;}
+
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5vw,4.5rem);line-height:0.95;letter-spacing:0.02em;color:var(--tx-bright);margin-bottom:0.8rem;}
+.sec-title .serif{font-family:'DM Serif Display',serif;font-style:italic;color:var(--tx-mid);font-size:0.68em;}
+.sec-lead{font-size:1.12rem;font-weight:300;color:var(--tx-mid);max-width:640px;line-height:1.8;}
+
+.card{background:var(--d3);border:1px solid rgba(255,255,255,0.04);border-radius:var(--r);padding:var(--pc);transition:border-color 0.3s;}
+.card:hover{border-color:rgba(255,255,255,0.08);}
+.card-accent{background:var(--red-dim);border:1px solid var(--red-border);border-radius:var(--r);padding:var(--pc);}
+.card-gold{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:var(--r);padding:var(--pc);}
+
+.tag{display:inline-block;padding:0.2rem 0.6rem;border-radius:var(--r);font-family:'Bebas Neue',sans-serif;font-size:0.7rem;letter-spacing:0.1em;}
+.tag-r{background:var(--red-dim);color:var(--red-glow);border:1px solid var(--red-border);}
+.tag-g{background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-border);}
+.tag-ok{background:var(--green-dim);color:var(--green);border:1px solid var(--green-border);}
+.tag-n{background:rgba(255,255,255,0.04);color:var(--tx-dim);border:1px solid rgba(255,255,255,0.08);}
+.tag-ig{background:rgba(225,48,108,0.10);color:var(--pink);border:1px solid rgba(225,48,108,0.18);}
+.tag-yt{background:rgba(255,0,0,0.08);color:var(--yt-red);border:1px solid rgba(255,0,0,0.15);}
+.tag-tk{background:rgba(105,201,208,0.10);color:var(--tk-cyan);border:1px solid rgba(105,201,208,0.18);}
+
+/* Pillar tags */
+.tag-adr{background:var(--p-adr-dim);color:var(--p-adr);border:1px solid var(--p-adr-border);}
+.tag-com{background:var(--p-com-dim);color:var(--p-com);border:1px solid var(--p-com-border);}
+.tag-lif{background:var(--p-lif-dim);color:var(--p-lif);border:1px solid var(--p-lif-border);}
+.tag-exc{background:var(--p-exc-dim);color:var(--p-exc);border:1px solid var(--p-exc-border);}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--gap);}
+.mt{margin-top:2.5rem;} .mt-s{margin-top:1.5rem;}
+.div-d{height:1px;background:rgba(255,255,255,0.05);margin:var(--gap) 0;}
+
+.sr{opacity:0;transform:translateY(28px);transition:opacity 0.7s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);}
+.sr.in{opacity:1;transform:translateY(0);}
+.d1{transition-delay:0.08s;}.d2{transition-delay:0.16s;}.d3{transition-delay:0.24s;}.d4{transition-delay:0.32s;}
+
+/* ═══ HERO ═══ */
+.hero{min-height:100vh;background:var(--d1);display:flex;align-items:center;padding:106px var(--pw) 5rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(200,55,45,0.05) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(212,168,83,0.03) 0%,transparent 50%);}
+.hero-inner{position:relative;z-index:2;max-width:1140px;width:100%;margin:0 auto;}
+.hero .eyebrow{font-size:0.78rem;margin-bottom:2.5rem;opacity:0;animation:fu 0.8s 0.2s forwards;}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,10vw,9rem);line-height:0.9;letter-spacing:0.02em;color:var(--tx-bright);margin-bottom:2.5rem;opacity:0;animation:fu 0.8s 0.35s forwards;}
+.hero-title em{font-family:'DM Serif Display',serif;font-style:italic;color:var(--red-glow);font-size:0.78em;}
+.hero-stats{display:flex;gap:2.5rem;opacity:0;animation:fu 0.8s 0.55s forwards;}
+.hs{border-left:2px solid var(--red);padding-left:1rem;}
+.hs-n{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--tx-bright);line-height:1;letter-spacing:0.05em;}
+.hs-l{font-family:'Bebas Neue',sans-serif;font-size:0.7rem;letter-spacing:0.15em;color:var(--tx-dim);margin-top:0.15rem;}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);font-family:'Bebas Neue',sans-serif;font-size:0.68rem;letter-spacing:0.3em;color:var(--tx-dim);opacity:0;animation:fu 0.8s 1s forwards;}
+.hero-scroll::after{content:'';display:block;width:1px;height:28px;background:var(--red);margin:0.7rem auto 0;animation:pulse 2s ease infinite;}
+@keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:0.3}50%{opacity:1}}
+
+/* ═══ DIAGNOSTICS ═══ */
+.diag-cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;}
+.diag-col-hd{font-family:'Bebas Neue',sans-serif;font-size:0.92rem;letter-spacing:0.15em;margin-bottom:1rem;}
+.diag-ok .diag-col-hd{color:var(--green);} .diag-ko .diag-col-hd{color:var(--red-glow);}
+.diag-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:0.75rem;}
+.di-num{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;line-height:1.3;min-width:28px;}
+.diag-ok .di-num{color:rgba(74,158,109,0.3);} .diag-ko .di-num{color:rgba(200,55,45,0.3);}
+.diag-item p{font-size:1rem;line-height:1.6;color:var(--tx-mid);}
+
+/* ═══ PILLAR CARDS (branded) ═══ */
+.pillar-card{padding:2.2rem 1.5rem;position:relative;overflow:hidden;}
+.pillar-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.pillar-card.p-adr::before{background:var(--p-adr);} .pillar-card.p-com::before{background:var(--p-com);}
+.pillar-card.p-lif::before{background:var(--p-lif);} .pillar-card.p-exc::before{background:var(--p-exc);}
+.pillar-icon{font-size:2.2rem;margin-bottom:0.6rem;}
+.pillar-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:0.12em;margin-bottom:0.15rem;}
+.pillar-card.p-adr h3{color:var(--p-adr);} .pillar-card.p-com h3{color:var(--p-com);}
+.pillar-card.p-lif h3{color:var(--p-lif);} .pillar-card.p-exc h3{color:var(--p-exc);}
+.pillar-subtitle{font-family:'DM Serif Display',serif;font-style:italic;font-size:0.92rem;color:var(--tx-dim);margin-bottom:0.6rem;}
+.pillar-card p{font-size:0.95rem;color:var(--tx-mid);line-height:1.55;}
+.pillar-formats{margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.05);}
+.pillar-formats span{font-size:0.82rem;color:var(--tx-dim);}
+
+/* ═══ TONE COMPARE ═══ */
+.tone-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,0.05);}
+.tone-col{padding:2rem;}
+.tone-col.before{background:rgba(255,255,255,0.02);}
+.tone-col.after{background:var(--red-dim);border-left:2px solid var(--red);}
+.tone-label{font-family:'Bebas Neue',sans-serif;font-size:0.82rem;letter-spacing:0.2em;margin-bottom:1.2rem;}
+.tone-col.before .tone-label{color:var(--tx-dim);} .tone-col.after .tone-label{color:var(--red-glow);}
+.tone-ex{font-size:0.98rem;line-height:1.65;padding-bottom:1rem;margin-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.05);}
+.tone-ex:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.tone-col.before .tone-ex{color:var(--tx-dim);} .tone-col.after .tone-ex{color:var(--tx);}
+.tone-ctx{display:block;font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.35rem;color:var(--tx-dim);}
+
+/* ═══ PLATFORM HEADERS ═══ */
+.plat-hd{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.2rem;margin-top:3rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,0.05);}
+.plat-hd:first-of-type{border-top:none;padding-top:0;margin-top:2rem;}
+.plat-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.08em;color:var(--tx-bright);}
+.plat-tag{font-family:'DM Serif Display',serif;font-style:italic;font-size:1rem;color:var(--tx-dim);}
+.sub-label{font-family:'Bebas Neue',sans-serif;font-size:0.92rem;letter-spacing:0.18em;color:var(--tx-bright);margin-top:2.5rem;margin-bottom:1rem;}
+
+/* ═══ TABLES ═══ */
+.tbl{width:100%;border-collapse:collapse;margin:1.2rem 0;}
+.tbl th{font-family:'Bebas Neue',sans-serif;font-size:0.78rem;letter-spacing:0.18em;color:var(--red-glow);text-align:left;padding:0.75rem 1rem;border-bottom:1px solid var(--red-border);}
+.tbl td{padding:0.75rem 1rem;font-size:0.98rem;border-bottom:1px solid rgba(255,255,255,0.03);vertical-align:top;line-height:1.55;color:var(--tx-mid);}
+.tbl tr:hover td{background:rgba(200,55,45,0.02);}
+.tbl td:first-child{font-weight:400;color:var(--tx);white-space:nowrap;}
+
+/* ═══ SERIES CARDS ═══ */
+.series-card h4{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.1em;color:var(--red-glow);margin-bottom:0.2rem;}
+.series-card p{font-size:0.95rem;line-height:1.6;color:var(--tx-mid);}
+.copy-ex{margin-top:0.8rem;padding:0.8rem 1rem;background:rgba(200,55,45,0.04);border-left:2px solid var(--red);border-radius:0 var(--r) var(--r) 0;font-size:0.95rem;font-style:italic;line-height:1.55;color:var(--tx);}
+
+/* ═══ HOOKS ═══ */
+.hook-type{font-family:'Bebas Neue',sans-serif;font-size:0.78rem;letter-spacing:0.15em;color:var(--red-glow);margin-bottom:0.5rem;}
+.hook-card p{font-size:0.98rem;font-style:italic;line-height:1.5;color:var(--tx);}
+.hook-why{font-style:normal !important;font-size:0.88rem !important;color:var(--tx-mid) !important;margin-top:0.4rem;}
+
+/* ═══ GRID MOCKUP ═══ */
+.mock-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.mock-cell{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0.8rem;font-size:0.78rem;border-radius:2px;}
+.mock-cell .cell-icon{font-size:1.3rem;margin-bottom:0.3rem;}
+.mock-cell .cell-type{font-family:'Bebas Neue',sans-serif;letter-spacing:0.08em;font-size:0.65rem;margin-top:0.2rem;}
+.mc-a{background:var(--p-adr-dim);color:var(--p-adr);} .mc-c{background:var(--p-com-dim);color:var(--p-com);}
+.mc-l{background:var(--p-lif-dim);color:var(--p-lif);} .mc-e{background:var(--p-exc-dim);color:var(--p-exc);}
+
+/* ═══ HASHTAGS ═══ */
+.ht-group{margin-bottom:1rem;}
+.ht-label{font-family:'Bebas Neue',sans-serif;font-size:0.78rem;letter-spacing:0.15em;color:var(--tx-dim);margin-bottom:0.4rem;}
+.ht-tags{display:flex;flex-wrap:wrap;gap:0.35rem;}
+.ht-tag{font-size:0.9rem;color:var(--tx-mid);background:rgba(255,255,255,0.04);padding:0.22rem 0.55rem;border-radius:var(--r);}
+
+/* ═══ EVENT FLOW ═══ */
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:2rem 0;border:1px solid rgba(255,255,255,0.05);border-radius:var(--r);overflow:hidden;}
+.flow-phase{padding:2rem 1.5rem;background:var(--d3);border-right:1px solid rgba(255,255,255,0.05);}
+.flow-phase:last-child{border-right:none;}
+.flow-phase-label{font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red-glow);margin-bottom:0.2rem;}
+.flow-phase h4{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.1em;color:var(--tx-bright);margin-bottom:1rem;}
+.fl-item{display:flex;gap:0.5rem;align-items:baseline;margin-bottom:0.5rem;}
+.fl-day{font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;color:var(--tx-dim);min-width:38px;}
+.fl-txt{font-size:0.92rem;color:var(--tx-mid);line-height:1.45;}
+
+/* ═══ CASE STUDY ═══ */
+.case-tl{position:relative;padding-left:1.8rem;border-left:2px solid var(--red-border);}
+.case-day{margin-bottom:1.3rem;position:relative;}
+.case-day::before{content:'';position:absolute;left:-1.8rem;top:0.3rem;width:8px;height:8px;border-radius:50%;background:var(--red);transform:translateX(-3px);}
+.case-day-label{font-family:'Bebas Neue',sans-serif;font-size:0.85rem;letter-spacing:0.15em;color:var(--red-glow);margin-bottom:0.25rem;}
+.case-items{list-style:none;}
+.case-items li{font-size:0.95rem;color:var(--tx-mid);padding:0.25rem 0;display:flex;gap:0.5rem;align-items:baseline;line-height:1.5;}
+
+/* ═══ MEDIA FLOW ═══ */
+.mf-diagram{display:flex;align-items:center;justify-content:center;gap:0.7rem;flex-wrap:wrap;margin:1.5rem 0;}
+.mf-step{text-align:center;padding:1rem 1.2rem;border:1px solid rgba(255,255,255,0.06);border-radius:var(--r);min-width:130px;}
+.mf-step-label{font-family:'Bebas Neue',sans-serif;font-size:0.72rem;letter-spacing:0.12em;color:var(--red-glow);margin-bottom:0.2rem;}
+.mf-step-desc{font-size:0.9rem;color:var(--tx-mid);line-height:1.4;}
+.mf-arrow{font-size:1rem;color:var(--tx-dim);}
+
+/* ═══ YT ═══ */
+.yt-card h4{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.1em;color:var(--red-glow);margin-bottom:0.15rem;}
+.yt-dur{font-size:0.78rem;color:var(--tx-dim);letter-spacing:0.08em;margin-bottom:0.6rem;}
+.yt-card p{font-size:0.95rem;color:var(--tx-mid);line-height:1.6;}
+.yt-struct{margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.05);}
+.yt-struct h5{font-family:'Bebas Neue',sans-serif;font-size:0.75rem;letter-spacing:0.15em;color:var(--tx-dim);margin-bottom:0.3rem;}
+.yt-struct ol{padding-left:1.2rem;} .yt-struct li{font-size:0.9rem;color:var(--tx-mid);padding:0.12rem 0;line-height:1.45;}
+
+/* ═══ SEO ═══ */
+.seo-ex{padding:1rem;background:rgba(255,255,255,0.02);border-radius:var(--r);margin-bottom:0.8rem;} .seo-ex:last-child{margin-bottom:0;}
+.seo-label{font-family:'Bebas Neue',sans-serif;font-size:0.72rem;letter-spacing:0.15em;color:var(--tx-dim);margin-bottom:0.2rem;}
+.seo-val{font-size:0.98rem;color:var(--tx);line-height:1.5;}
+.seo-why{font-size:0.85rem;color:var(--tx-dim);margin-top:0.2rem;font-style:italic;}
+
+/* ═══ TK ═══ */
+.tk-card{text-align:center;padding:1.5rem 1rem;}
+.tk-icon{font-size:1.8rem;margin-bottom:0.5rem;}
+.tk-card h5{font-family:'Bebas Neue',sans-serif;font-size:0.9rem;letter-spacing:0.1em;color:var(--tk-cyan);margin-bottom:0.3rem;}
+.tk-card p{font-size:0.9rem;color:var(--tx-mid);line-height:1.5;}
+.tk-viral{font-size:0.78rem;color:var(--tx-dim);margin-top:0.4rem;font-style:italic;}
+
+/* ═══ KPI ═══ */
+.kpi-card{text-align:center;padding:1.5rem 0.8rem;}
+.kpi-label{font-family:'Bebas Neue',sans-serif;font-size:0.72rem;letter-spacing:0.18em;color:var(--tx-dim);margin-bottom:0.25rem;}
+.kpi-val{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--red-glow);line-height:1;letter-spacing:0.05em;}
+.kpi-desc{font-size:0.82rem;color:var(--tx-mid);margin-top:0.2rem;}
+
+/* ═══ ECO CARDS ═══ */
+.eco-card{padding:2rem;}
+.eco-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.08em;color:var(--tx-bright);margin-bottom:0.6rem;}
+.eco-card p{font-size:0.98rem;line-height:1.65;color:var(--tx-mid);}
+.eco-actions{margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.05);list-style:none;}
+.eco-actions li{font-size:0.9rem;color:var(--tx-mid);padding:0.25rem 0 0.25rem 1rem;position:relative;line-height:1.5;}
+.eco-actions li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:0.8rem;}
+
+/* ═══ FOOTER ═══ */
+.footer{text-align:center;padding:2.5rem;border-top:1px solid rgba(255,255,255,0.04);}
+.footer p{font-family:'Bebas Neue',sans-serif;font-size:0.72rem;letter-spacing:0.2em;color:var(--tx-dim);}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:900px){
+  :root{--pw:1.5rem;--ps:4.5rem;}
+  .g2,.g3,.g4,.g5{grid-template-columns:1fr !important;}
+  .diag-cols,.flow-grid,.tone-grid{grid-template-columns:1fr;}
+  .flow-phase{border-right:none;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .tone-col.after{border-left:none;border-top:2px solid var(--red);}
+  .hero-stats{flex-wrap:wrap;gap:1.5rem;}
+  .nav-links{display:none;}
+  .plat-hd{flex-direction:column;gap:0.2rem;}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<nav>
+  <div class="nav-logo">AMAZING DRIVES</div>
+  <ul class="nav-links">
+    <li><a href="#base">Base</a></li>
+    <li><a href="#bastidores">Bastidores</a></li>
+    <li><a href="#vision">Visión</a></li>
+    <li><a href="#rrss">RRSS</a></li>
+    <li><a href="#flujo">Eventos</a></li>
+    <li><a href="#ecosistema">Ecosistema</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow" style="opacity:0;animation:fu 0.8s 0.2s forwards;">Propuesta de Estrategia de Comunicación Digital · 2026</div>
+    <h1 class="hero-title">QUE EL MUNDO SIENTA<br><em>lo que vosotros vivís.</em></h1>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-n">3</div><div class="hs-l">Plataformas</div></div>
+      <div class="hs"><div class="hs-n">15+</div><div class="hs-l">Piezas / Evento</div></div>
+      <div class="hs"><div class="hs-n">4</div><div class="hs-l">Pilares</div></div>
+      <div class="hs"><div class="hs-n">12M</div><div class="hs-l">Horizonte</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</div>
+
+<!-- ═══ 01 · BASE ═══ -->
+<div class="sec" style="background:var(--d2);" id="base">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">01 · Punto de partida</div>
+      <h2 class="sec-title">MÁS QUE EVENTOS, <span class="serif">una comunidad</span></h2>
+    </div>
+    <div class="g3 mt sr d1">
+      <div class="card">
+        <div class="tag tag-ok" style="margin-bottom:0.8rem;">Comunidad</div>
+        <p style="font-size:1rem;line-height:1.65;color:var(--tx-mid);">No sois una empresa de eventos. Sois <strong>una comunidad de drivers</strong> que ha conseguido algo que el dinero no puede comprar: personas que vuelven temporada tras temporada porque se sienten parte de algo.</p>
+      </div>
+      <div class="card">
+        <div class="tag tag-ok" style="margin-bottom:0.8rem;">Ecosistema</div>
+        <p style="font-size:1rem;line-height:1.65;color:var(--tx-mid);">Trackdays, campeonato propio (ADCC), academia de conducción, rutas internacionales, experiencias exclusivas, tienda especializada y app de telemetría en directo. Un ecosistema completo.</p>
+      </div>
+      <div class="card">
+        <div class="tag tag-ok" style="margin-bottom:0.8rem;">Tracción</div>
+        <p style="font-size:1rem;line-height:1.65;color:var(--tx-mid);"><strong>8.800 seguidores</strong>, 638 publicaciones, un ADCC con categorías por potencia, resistencias de 4h, sprints y una prueba de 24 horas. Eventos que se llenan.</p>
+      </div>
+    </div>
+    <div class="card-accent mt-s sr d2" style="max-width:750px;">
+      <p style="font-family:'DM Serif Display',serif;font-size:1.3rem;font-style:italic;line-height:1.6;color:var(--tx);">No vendéis plazas en un circuito. Vendéis la sensación de pertenecer a un grupo de personas que entiende por qué merece la pena madrugar un sábado para ir a rodar.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 02 · OPORTUNIDAD ═══ -->
+<div class="sec" style="background:var(--d3);" id="bastidores">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">02 · Radiografía</div>
+      <h2 class="sec-title">ENTRE BASTIDORES, <span class="serif">lo que falta por contar</span></h2>
+      <p class="sec-lead">Tenéis las historias, el material y la comunidad. Solo falta una capa: la que convierte lo que se vive en algo que se siente desde fuera.</p>
+    </div>
+    <div class="diag-cols sr d1">
+      <div class="diag-ok">
+        <div class="diag-col-hd">✓ Lo que ya funciona</div>
+        <div class="card diag-item"><div class="di-num">01</div><p>Base de <strong>8.800 seguidores</strong> sólida para motorsport amateur</p></div>
+        <div class="card diag-item"><div class="di-num">02</div><p>Material fotográfico y de vídeo de <strong>gran calidad</strong></p></div>
+        <div class="card diag-item"><div class="di-num">03</div><p><strong>Retransmisiones en directo</strong> en YouTube — activo muy difícil de replicar</p></div>
+        <div class="card diag-item"><div class="di-num">04</div><p>Stories destacadas organizadas por evento con buena cobertura visual</p></div>
+        <div class="card diag-item"><div class="di-num">05</div><p>App de telemetría en directo — herramienta diferencial única</p></div>
+        <div class="card diag-item"><div class="di-num">06</div><p>Equipo de media propio que ya genera contenido en cada evento</p></div>
+      </div>
+      <div class="diag-ko">
+        <div class="diag-col-hd">✗ Lo que hay que mejorar</div>
+        <div class="card diag-item"><div class="di-num">01</div><p>El contenido <strong>documenta pero no emociona</strong> — falta la capa aspiracional</p></div>
+        <div class="card diag-item"><div class="di-num">02</div><p>El grid mezcla fotos de acción con <strong>gráficas tipo cartel</strong> — rompe coherencia</p></div>
+        <div class="card diag-item"><div class="di-num">03</div><p>Las retransmisiones de YouTube <strong>no generan contenido derivado</strong></p></div>
+        <div class="card diag-item"><div class="di-num">04</div><p><strong>No hay series recurrentes</strong> ni narrativa sostenida</p></div>
+        <div class="card diag-item"><div class="di-num">05</div><p>TikTok existe pero <strong>sin actividad</strong> — potencial viral enorme</p></div>
+        <div class="card diag-item"><div class="di-num">06</div><p>No hay <strong>flujo pre/durante/post evento</strong> — no se maximiza cada evento</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 03 · VISIÓN ═══ -->
+<div class="sec" style="background:var(--d1);" id="vision">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">03 · Visión estratégica</div>
+      <h2 class="sec-title">DE DOCUMENTAR <span class="serif">a hacer sentir</span></h2>
+      <p class="sec-lead">El objetivo no es cambiar Amazing Drives. Es amplificar lo que ya es para que quien lo vea desde fuera sienta que necesita formar parte.</p>
+    </div>
+
+    <!-- BRANDED PILLARS -->
+    <div class="g4 mt sr d1">
+      <div class="card pillar-card p-adr">
+        <div class="pillar-icon">🔥</div>
+        <h3>ADRENALINA</h3>
+        <div class="pillar-subtitle">Siente la velocidad</div>
+        <p>Frenadas, adelantamientos, on-boards, el sonido de los motores. Lo que acelera el pulso.</p>
+        <div class="pillar-formats"><span>Reels · Shorts · Clips TikTok</span></div>
+      </div>
+      <div class="card pillar-card p-com">
+        <div class="pillar-icon">🤝</div>
+        <h3>COMUNIDAD</h3>
+        <div class="pillar-subtitle">Las personas detrás del casco</div>
+        <p>Perfiles de pilotos, historias de equipos, momentos humanos. Lo que hace volver.</p>
+        <div class="pillar-formats"><span>Carruseles · Team Profiles · Driver Stories</span></div>
+      </div>
+      <div class="card pillar-card p-lif">
+        <div class="pillar-icon">✨</div>
+        <h3>LIFESTYLE</h3>
+        <div class="pillar-subtitle">Mucho más que circuitos</div>
+        <p>Rutas, gastronomía, paisajes, cenas post-carrera. La vida alrededor del motor.</p>
+        <div class="pillar-formats"><span>Fotos · Vlogs · Reels cinematográficos</span></div>
+      </div>
+      <div class="card pillar-card p-exc">
+        <div class="pillar-icon">🔑</div>
+        <h3>EXCLUSIVIDAD</h3>
+        <div class="pillar-subtitle">Quieres estar, no puedes entrar</div>
+        <p>Behind the scenes, eventos privados, acceso restringido. Lo que genera deseo de pertenecer.</p>
+        <div class="pillar-formats"><span>Stories · Contenido solo miembros</span></div>
+      </div>
+    </div>
+
+    <!-- TONE -->
+    <div class="tone-grid mt sr d2">
+      <div class="tone-col before">
+        <div class="tone-label">AHORA · DOCUMENTAL</div>
+        <div class="tone-ex"><span class="tone-ctx">Copy de post</span>"Gran jornada en Alcarràs con la primera prueba del ADCC 2026. Sprint y 4h de resistencia. ¡Gracias a todos! 🏁"</div>
+        <div class="tone-ex"><span class="tone-ctx">Bio de Instagram</span>"TrackDays + Formación + Rutas. Amazing Drives Classics Challenge 🏆"</div>
+        <div class="tone-ex"><span class="tone-ctx">Story pre-evento</span>Gráfica con fecha, circuito y logo. "¡Inscripciones abiertas!"</div>
+      </div>
+      <div class="tone-col after">
+        <div class="tone-label">PROPUESTA · EXPERIENCIAL</div>
+        <div class="tone-ex"><span class="tone-ctx">Copy de post</span>"4 horas. 38 grados al asfalto. El BMW E30 del equipo Llamp lleva 3h47 girando sin parar y le queda combustible para una vuelta más. O no. Alcarràs no perdona."</div>
+        <div class="tone-ex"><span class="tone-ctx">Bio de Instagram</span>"Carreras de coches clásicos. Rutas por las mejores carreteras de Europa. Una comunidad que vive para conducir. ↓ Únete."</div>
+        <div class="tone-ex"><span class="tone-ctx">Story pre-evento</span>Clip del mejor momento de la anterior carrera + encuesta: "¿Quién repite victoria?"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 04 · RRSS ═══ -->
+<div class="sec" style="background:var(--d2);" id="rrss">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">04 · Fase 1 — Redes Sociales</div>
+      <h2 class="sec-title">INSTAGRAM, YOUTUBE, <span class="serif">TikTok</span></h2>
+      <p class="sec-lead">Tres plataformas, una estrategia coordinada. Cómo convertirlas en el motor de crecimiento de la comunidad.</p>
+    </div>
+
+    <!-- INSTAGRAM -->
+    <div class="plat-hd sr"><div class="plat-name">INSTAGRAM</div><div class="plat-tag">De galería a ventana experiencial</div></div>
+    <div class="sr d1">
+      <table class="tbl">
+        <thead><tr><th>Pilar</th><th>Contenido</th><th>Formato</th><th>Frecuencia</th></tr></thead>
+        <tbody>
+          <tr><td><span class="tag tag-adr" style="font-size:0.62rem;">ADRENALINA</span></td><td>Acción en pista, on-boards, adelantamientos, slow-mo</td><td>Reels 15-30s, carruseles</td><td>2-3/semana</td></tr>
+          <tr><td><span class="tag tag-com" style="font-size:0.62rem;">COMUNIDAD</span></td><td>Perfiles pilotos, equipos, momentos humanos</td><td>Carruseles storytelling, reels</td><td>1-2/semana</td></tr>
+          <tr><td><span class="tag tag-lif" style="font-size:0.62rem;">LIFESTYLE</span></td><td>Rutas, paisajes, gastronomía, fuera de pista</td><td>Fotos atmosféricas, reels</td><td>1/semana</td></tr>
+          <tr><td><span class="tag tag-exc" style="font-size:0.62rem;">EXCLUSIVIDAD</span></td><td>Behind the scenes, eventos privados, teasers</td><td>Stories, reels</td><td>1/sem + stories</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card mt sr d2" style="max-width:480px;">
+      <div class="ht-label" style="margin-bottom:0.8rem;">Estructura del Grid · Alternancia de pilares</div>
+      <div class="mock-grid">
+        <div class="mock-cell mc-a"><span class="cell-icon">🏁</span>Reel on-board<span class="cell-type">Adrenalina</span></div>
+        <div class="mock-cell mc-c"><span class="cell-icon">👤</span>Driver Story<span class="cell-type">Comunidad</span></div>
+        <div class="mock-cell mc-l"><span class="cell-icon">🌄</span>Foto paisaje<span class="cell-type">Lifestyle</span></div>
+        <div class="mock-cell mc-a"><span class="cell-icon">🎬</span>Slow-mo<span class="cell-type">Adrenalina</span></div>
+        <div class="mock-cell mc-e"><span class="cell-icon">🔒</span>Behind scenes<span class="cell-type">Exclusividad</span></div>
+        <div class="mock-cell mc-a"><span class="cell-icon">📸</span>Fotos épicas<span class="cell-type">Adrenalina</span></div>
+        <div class="mock-cell mc-c"><span class="cell-icon">🏆</span>Recap<span class="cell-type">Comunidad</span></div>
+        <div class="mock-cell mc-l"><span class="cell-icon">🍷</span>Wine Collectors<span class="cell-type">Lifestyle</span></div>
+        <div class="mock-cell mc-a"><span class="cell-icon">🔊</span>Sonido motor<span class="cell-type">Adrenalina</span></div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--tx-dim);margin-top:0.8rem;text-align:center;">~40% Adrenalina · ~25% Comunidad · ~25% Lifestyle · ~10% Exclusividad</p>
+    </div>
+
+    <!-- Series -->
+    <div class="sub-label sr">SERIES RECURRENTES</div>
+    <div class="g2 sr d1">
+      <div class="card series-card"><div class="tag tag-com" style="margin-bottom:0.6rem;">Semanal · Comunidad</div><h4>DRIVER STORIES</h4><p>Perfiles humanos: ¿Quién eres fuera del casco? ¿Por qué corres?</p><div class="copy-ex">"Alejandro es ingeniero de día, piloto de E30 de fin de semana. Lleva 3 temporadas en el ADCC y jura que la curva 7 de Calafat le persigue hasta en sueños."</div></div>
+      <div class="card series-card"><div class="tag tag-adr" style="margin-bottom:0.6rem;">Pre-evento · Expectativa</div><h4>COUNTDOWN</h4><p>5-7 días antes: teaser circuito, pilotos confirmados, dato histórico, encuesta.</p><div class="copy-ex">"5 días para Alcarràs. La última vez, el safety car en la vuelta 47 cambió todo. Este año, 23 equipos quieren contarlo de otra forma."</div></div>
+      <div class="card series-card"><div class="tag tag-com" style="margin-bottom:0.6rem;">Post-evento · Engagement</div><h4>RECAP EMOCIONAL</h4><p>El momento que nadie vio, la reparación épica, el piloto que debutó.</p><div class="copy-ex">"El equipo Garage Night rompió semi-eje en la hora 2. Lo cambiaron en 17 minutos. Acabaron 4os. Motorsport amateur en estado puro."</div></div>
+      <div class="card series-card"><div class="tag tag-lif" style="margin-bottom:0.6rem;">Mensual · Atemporal</div><h4>GARAGE TALK</h4><p>Un coche icónico del ADCC, preparación de coche de carrera, curiosidades.</p><div class="copy-ex">"Este 205 GTI tiene 180.000 km, 4 temporadas de ADCC encima y sigue ganando sprints. Su secreto no está en el motor."</div></div>
+    </div>
+
+    <!-- Hooks -->
+    <div class="sub-label sr">HOOKS PARA REELS · LOS PRIMEROS 2 SEGUNDOS</div>
+    <div class="g3 sr d1">
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">Pregunta directa</div><p>"¿Alguna vez has conducido un coche de carreras a 200 km/h?"</p><p class="hook-why">Conecta con el deseo. Retiene por curiosidad.</p></div>
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">Dato impactante</div><p>"24 horas. 38 coches. 1 circuito. 0 profesionales."</p><p class="hook-why">Genera intriga. Rompe expectativas.</p></div>
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">In media res</div><p>[Sonido impacto + coche en grava] "Lo que pasó después nadie lo esperaba."</p><p class="hook-why">Arranca en el clímax.</p></div>
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">Sonido puro</div><p>[Motor en frío → rugido] Sin texto, sin música.</p><p class="hook-why">El sonido de un motor es el hook más potente.</p></div>
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">Contraste</div><p>"De lunes a viernes, ingeniero. Los sábados, esto." [On-board]</p><p class="hook-why">Identificación instantánea con el target.</p></div>
+      <div class="card" style="padding:1.3rem;"><div class="hook-type">POV</div><p>"POV: llegas a tu primer trackday" [Paddock → casco → pista]</p><p class="hook-why">Formato nativo. Inmersión total.</p></div>
+    </div>
+
+    <!-- Hashtags -->
+    <div class="sub-label sr">ESTRATEGIA DE HASHTAGS</div>
+    <div class="card sr d1">
+      <div class="ht-group"><div class="ht-label">Propios · Siempre presentes</div><div class="ht-tags"><span class="ht-tag">#AmazingDrives</span><span class="ht-tag">#ADCC</span><span class="ht-tag">#ADCClassicsChallenge</span><span class="ht-tag">#DriverStories</span><span class="ht-tag">#AmazingDriver</span></div></div>
+      <div class="ht-group"><div class="ht-label">Nicho · Descubrimiento cualificado</div><div class="ht-tags"><span class="ht-tag">#TrackdaySpain</span><span class="ht-tag">#ClassicRacing</span><span class="ht-tag">#Youngtimer</span><span class="ht-tag">#AmateurRacing</span><span class="ht-tag">#EnduranceRacing</span><span class="ht-tag">#MotorsportLifestyle</span><span class="ht-tag">#TrackLife</span></div></div>
+      <div class="ht-group"><div class="ht-label">Alcance · Volumen alto</div><div class="ht-tags"><span class="ht-tag">#Motorsport</span><span class="ht-tag">#RacingCars</span><span class="ht-tag">#CarCulture</span><span class="ht-tag">#PetrolHead</span><span class="ht-tag">#DrivingPassion</span><span class="ht-tag">#WeekendWarrior</span></div></div>
+      <div class="ht-group" style="margin-bottom:0;"><div class="ht-label">Circuito · Según contexto</div><div class="ht-tags"><span class="ht-tag">#CircuitoAlcarràs</span><span class="ht-tag">#Calafat</span><span class="ht-tag">#Castellolí</span><span class="ht-tag">#AndalucíaCircuit</span><span class="ht-tag">#24HorasResistencia</span></div></div>
+      <p style="font-size:0.85rem;color:var(--tx-dim);margin-top:1rem;">15-20 hashtags/post: 3-4 propios + 5-6 nicho + 3-4 alcance + 2-3 contexto.</p>
+    </div>
+
+    <!-- Stories -->
+    <div class="sub-label sr">STORIES · ENGAGEMENT Y COBERTURA EN VIVO</div>
+    <div class="sr d1">
+      <table class="tbl">
+        <thead><tr><th>Tipo</th><th>Uso</th><th>Cuándo</th></tr></thead>
+        <tbody>
+          <tr><td>Cobertura en vivo</td><td>Seguimiento en directo de las carreras: posiciones, momentos clave, incidentes, cambio de líder. Que quien no esté ahí sepa qué está pasando en tiempo real</td><td>Durante cada evento</td></tr>
+          <tr><td>Encuestas / Quiz</td><td>"¿Quién gana mañana?", "Coche favorito del paddock", predicciones</td><td>2-3/semana</td></tr>
+          <tr><td>Behind the scenes</td><td>Preparación coches, montaje paddock, cena post-carrera, amanecer en circuito</td><td>En cada evento</td></tr>
+          <tr><td>Countdowns</td><td>Sticker cuenta atrás + teaser visual</td><td>7 días antes</td></tr>
+          <tr><td>Testimonios raw</td><td>Vídeo 15s de piloto al acabar: sin editar, pura emoción</td><td>Post-evento</td></tr>
+          <tr><td>Contenido exclusivo</td><td>"Solo los Amazing Driver estuvieron aquí" — genera FOMO y justifica membresía</td><td>Tras eventos privados</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- YOUTUBE -->
+    <div class="plat-hd sr"><div class="plat-name">YOUTUBE</div><div class="plat-tag">La mina de oro</div></div>
+    <div class="g2 sr d1">
+      <div class="card yt-card"><h4>HIGHLIGHTS DE CARRERA</h4><div class="yt-dur">3-5 min · Post-carrera</div><p>Lo mejor de cada carrera con narrativa deportiva.</p><div class="yt-struct"><h5>Estructura</h5><ol><li>Cold open: momento épico (5s)</li><li>Intro con contexto (10s)</li><li>Salida y primeras vueltas (30-40s)</li><li>2-3 momentos clave + telemetría (60-90s)</li><li>Desenlace y podio (30s)</li><li>Teaser próximo evento (5s)</li></ol></div></div>
+      <div class="card yt-card"><h4>TEAM PROFILES</h4><div class="yt-dur">5-10 min · Temporada</div><p>Mini documentales sobre equipos. Historia, coche, motivación.</p><div class="yt-struct"><h5>Estructura</h5><ol><li>Gancho: momento impactante (5s)</li><li>Quiénes son fuera del circuito (60s)</li><li>El coche: historia y prep (60-90s)</li><li>Por qué corren (60s)</li><li>En pista con su coche (60s)</li><li>Cierre emocional (20s)</li></ol></div></div>
+      <div class="card yt-card"><h4>BEST OF ADCC</h4><div class="yt-dur">5-8 min · Mensual</div><p>Compilaciones: mejores adelantamientos, salidas, batallas rueda a rueda. Contenido atemporal.</p></div>
+      <div class="card yt-card"><h4>VLOGS DE EXPERIENCIA</h4><div class="yt-dur">8-15 min · Por evento</div><p>Alpine Madness, Portugal, Wine Collectors. La experiencia completa que vende membresías.</p></div>
+    </div>
+    <div class="card mt sr d2">
+      <div class="sub-label" style="margin-top:0;">SEO DE VÍDEO · EJEMPLO: HIGHLIGHTS SPRINT ALCARRÀS</div>
+      <div class="seo-ex"><div class="seo-label">Título</div><div class="seo-val">Sprint ÉPICO en Alcarràs · Coches Clásicos al Límite | ADCC 2026 R02</div><div class="seo-why">Emoción + circuito + keyword "coches clásicos" + contexto campeonato</div></div>
+      <div class="seo-ex"><div class="seo-label">Thumbnail</div><div class="seo-val">Foto adelantamiento cerrado + texto "SPRINT ALCARRÀS" + cara de piloto</div><div class="seo-why">Acción + texto legible en móvil + elemento humano</div></div>
+      <div class="seo-ex"><div class="seo-label">Descripción</div><div class="seo-val">El sprint del ADCC 2026 en Alcarràs dejó batallas memorables. 23 coches clásicos, categorías S a XL, y un final que nadie esperaba.</div><div class="seo-why">Contexto + keywords + gancho. Las 2 primeras líneas aparecen en búsqueda.</div></div>
+    </div>
+
+    <!-- TIKTOK -->
+    <div class="plat-hd sr"><div class="plat-name">TIKTOK</div><div class="plat-tag">Viralidad con mínimo esfuerzo</div></div>
+    <p style="font-size:1rem;color:var(--tx-mid);max-width:640px;margin-bottom:1.5rem;" class="sr">Reutilización inteligente del material de IG y YouTube. 3-5 clips/semana. Sin producción adicional.</p>
+    <div class="g5 sr d1">
+      <div class="card tk-card"><div class="tk-icon">🔊</div><h5>SONIDOS MOTOR</h5><p>Arranques, downshifts.</p><div class="tk-viral">Alto potencial viral</div></div>
+      <div class="card tk-card"><div class="tk-icon">🎥</div><h5>POV PILOTO</h5><p>On-board cámara fija.</p><div class="tk-viral">Formato inmersivo</div></div>
+      <div class="card tk-card"><div class="tk-icon">⚡</div><h5>MOMENTOS WOW</h5><p>Adelantamientos. 10-15s.</p><div class="tk-viral">Máximo share</div></div>
+      <div class="card tk-card"><div class="tk-icon">🔄</div><h5>ANTES / DESPUÉS</h5><p>Coche calle → carrera.</p><div class="tk-viral">Formato trending</div></div>
+      <div class="card tk-card"><div class="tk-icon">😅</div><h5>HUMOR MOTOR</h5><p>Situaciones del paddock.</p><div class="tk-viral">Engagement comunidad</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 04b · FLUJO ═══ -->
+<div class="sec" style="background:var(--d4);" id="flujo">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">04b · Flujo de cada evento</div>
+      <h2 class="sec-title">UN EVENTO = SEMANAS <span class="serif">de contenido</span></h2>
+      <p class="sec-lead">Cada evento alimenta las 3 plataformas durante 2 semanas. Más de 15 piezas por evento.</p>
+    </div>
+    <div class="flow-grid sr d1">
+      <div class="flow-phase">
+        <div class="flow-phase-label">Fase 1</div><h4>PRE-EVENTO</h4>
+        <div class="fl-item"><span class="fl-day">D-7</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Story countdown + teaser</span></div>
+        <div class="fl-item"><span class="fl-day">D-5</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Reel best of anterior</span></div>
+        <div class="fl-item"><span class="fl-day">D-3</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Carrusel pilotos confirmados</span></div>
+        <div class="fl-item"><span class="fl-day">D-2</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Encuesta pronósticos</span></div>
+        <div class="fl-item"><span class="fl-day">D-1</span><span class="fl-txt"><span class="tag tag-n" style="font-size:0.58rem;padding:0.12rem 0.4rem;">ALL</span> "Mañana empieza" + CTA</span></div>
+      </div>
+      <div class="flow-phase">
+        <div class="flow-phase-label">Fase 2</div><h4>DÍA DE EVENTO</h4>
+        <div class="fl-item"><span class="fl-day">AM</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Stories: amanecer, paddock</span></div>
+        <div class="fl-item"><span class="fl-day">SALIDA</span><span class="fl-txt"><span class="tag tag-yt" style="font-size:0.58rem;padding:0.12rem 0.4rem;">YT</span> Directo + promo telemetría</span></div>
+        <div class="fl-item"><span class="fl-day">CARRERA</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Cobertura en vivo + encuestas</span></div>
+        <div class="fl-item"><span class="fl-day">CARRERA</span><span class="fl-txt"><span class="tag tag-tk" style="font-size:0.58rem;padding:0.12rem 0.4rem;">TK</span> Clips rápidos: acción, sonido</span></div>
+        <div class="fl-item"><span class="fl-day">FIN</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Podio, testimonios raw</span></div>
+      </div>
+      <div class="flow-phase">
+        <div class="flow-phase-label">Fase 3</div><h4>POST-EVENTO</h4>
+        <div class="fl-item"><span class="fl-day">D+1</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Carrusel recap emocional</span></div>
+        <div class="fl-item"><span class="fl-day">D+2</span><span class="fl-txt"><span class="tag tag-tk" style="font-size:0.58rem;padding:0.12rem 0.4rem;">TK</span> Mejor adelantamiento</span></div>
+        <div class="fl-item"><span class="fl-day">D+4</span><span class="fl-txt"><span class="tag tag-yt" style="font-size:0.58rem;padding:0.12rem 0.4rem;">YT</span> Highlights 3-5 min</span></div>
+        <div class="fl-item"><span class="fl-day">D+6</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Driver Story participante</span></div>
+        <div class="fl-item"><span class="fl-day">D+8</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Garage Talk: coche del evento</span></div>
+        <div class="fl-item"><span class="fl-day">D+10</span><span class="fl-txt"><span class="tag tag-tk" style="font-size:0.58rem;padding:0.12rem 0.4rem;">TK</span> Compilación best moments</span></div>
+        <div class="fl-item"><span class="fl-day">D+12</span><span class="fl-txt"><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Teaser próximo → Fase 1</span></div>
+      </div>
+    </div>
+
+    <!-- Caso práctico -->
+    <div class="card-gold mt sr d2" style="padding:2.2rem;">
+      <div class="tag tag-g" style="margin-bottom:0.8rem;">Caso práctico</div>
+      <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:0.08em;color:var(--tx-bright);margin-bottom:0.3rem;">SPRINT + 4H RESISTENCIA · ALCARRÀS</h3>
+      <p style="font-size:0.98rem;color:var(--tx-mid);margin-bottom:1.5rem;">Comunicación completa de una prueba del ADCC.</p>
+      <div class="case-tl">
+        <div class="case-day"><div class="case-day-label">MARTES · D-5</div><ul class="case-items"><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG REEL</span> Vídeo 20s best of Alcarràs. Hook: "La última vez que fuimos a Alcarràs..."</li></ul></div>
+        <div class="case-day"><div class="case-day-label">JUEVES · D-3</div><ul class="case-items"><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG CARRUSEL</span> "23 equipos, 5 categorías, 1 día." Cierre: "¿Estás dentro?"</li></ul></div>
+        <div class="case-day"><div class="case-day-label">VIERNES · D-1</div><ul class="case-items"><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG STORIES</span> Encuesta + countdown + "Mañana a las 8, esto se llena de ruido."</li></ul></div>
+        <div class="case-day"><div class="case-day-label">SÁBADO · EVENTO</div><ul class="case-items"><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Stories cobertura en vivo: posiciones, momentos clave, incidentes</li><li><span class="tag tag-tk" style="font-size:0.58rem;padding:0.12rem 0.4rem;">TK</span> Clip salida: sonido real, slow-mo</li><li><span class="tag tag-yt" style="font-size:0.58rem;padding:0.12rem 0.4rem;">YT</span> Retransmisión directo + promo telemetría</li></ul></div>
+        <div class="case-day"><div class="case-day-label">DOMINGO · D+1</div><ul class="case-items"><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG CARRUSEL</span> Recap emocional: 10 fotos que cuentan el día</li></ul><div class="copy-ex" style="margin-top:0.6rem;">"Alcarràs, Round 02. El sprint lo decidieron 0,3 segundos. La resistencia, 4 horas de gestión y esa vuelta de más que siempre te pide el instinto. 23 equipos, 38 grados, 0 profesionales. Esto es el ADCC."</div></div>
+        <div class="case-day"><div class="case-day-label">SEMANA +2</div><ul class="case-items"><li><span class="tag tag-yt" style="font-size:0.58rem;padding:0.12rem 0.4rem;">YT</span> Highlights 4-5 min + datos telemetría</li><li><span class="tag tag-ig" style="font-size:0.58rem;padding:0.12rem 0.4rem;">IG</span> Driver Story + Garage Talk</li><li><span class="tag tag-tk" style="font-size:0.58rem;padding:0.12rem 0.4rem;">TK</span> Compilación best moments</li></ul></div>
+      </div>
+      <p style="font-size:0.95rem;color:var(--gold);font-weight:500;margin-top:1.2rem;">→ 18+ piezas en 3 plataformas. El ciclo se cierra cuando el teaser del próximo evento abre la siguiente Fase 1.</p>
+    </div>
+
+    <!-- Dinámica equipo -->
+    <div class="sub-label sr" style="margin-top:3rem;">DINÁMICA CON EL EQUIPO DE MEDIA</div>
+    <div class="card sr d1">
+      <div class="mf-diagram">
+        <div class="mf-step"><div class="mf-step-label">Nosotros</div><div class="mf-step-desc">Briefing creativo<br>+ shot list</div></div>
+        <div class="mf-arrow">→</div>
+        <div class="mf-step"><div class="mf-step-label">Equipo AD</div><div class="mf-step-desc">Captura, edición<br>foto y vídeo</div></div>
+        <div class="mf-arrow">→</div>
+        <div class="mf-step"><div class="mf-step-label">Nosotros</div><div class="mf-step-desc">Selección, copy<br>y planificación</div></div>
+        <div class="mf-arrow">→</div>
+        <div class="mf-step"><div class="mf-step-label">Publicación</div><div class="mf-step-desc">Calendario<br>coordinado</div></div>
+      </div>
+      <div class="div-d"></div>
+      <div class="g4" style="gap:1rem;">
+        <div><div class="ht-label">Briefing pre-evento</div><p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Momentos clave a capturar, tiros específicos, ángulos de historia humana.</p></div>
+        <div><div class="ht-label">Captura y edición</div><p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">El equipo de media de AD graba, edita y entrega material en carpeta compartida.</p></div>
+        <div><div class="ht-label">Copy y narrativa</div><p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Nosotros escribimos todo el texto, guiones, descripciones YT, hashtags.</p></div>
+        <div><div class="ht-label">Aprobación</div><p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Contenido compartido antes de publicar. Aprobación ágil en 24h.</p></div>
+      </div>
+    </div>
+
+    <!-- KPIs sin números -->
+    <div class="sub-label sr" style="margin-top:3rem;">MÉTRICAS DE SEGUIMIENTO</div>
+    <div class="g4 sr d1">
+      <div class="card kpi-card"><div class="kpi-label">Crecimiento IG</div><div class="kpi-val">SEGUIDORES</div><div class="kpi-desc">Crecimiento orgánico sostenido</div></div>
+      <div class="card kpi-card"><div class="kpi-label">Calidad</div><div class="kpi-val">ENGAGEMENT</div><div class="kpi-desc">Interacción real vs vanity metrics</div></div>
+      <div class="card kpi-card"><div class="kpi-label">YouTube</div><div class="kpi-val">VISTAS</div><div class="kpi-desc">Retención y suscriptores</div></div>
+      <div class="card kpi-card"><div class="kpi-label">TikTok</div><div class="kpi-val">ALCANCE</div><div class="kpi-desc">Impresiones y viralidad</div></div>
+      <div class="card kpi-card"><div class="kpi-label">Producción</div><div class="kpi-val">PIEZAS</div><div class="kpi-desc">Contenido generado por evento</div></div>
+      <div class="card kpi-card"><div class="kpi-label">Comunidad</div><div class="kpi-val">MEMBRESÍAS</div><div class="kpi-desc">Conversión desde RRSS</div></div>
+      <div class="card kpi-card"><div class="kpi-label">Frecuencia</div><div class="kpi-val">RITMO</div><div class="kpi-desc">Publicaciones semanales</div></div>
+      <div class="card kpi-card"><div class="kpi-label">Visibilidad</div><div class="kpi-val">IMPRESIONES</div><div class="kpi-desc">Crecimiento de alcance IG</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 05 · ECOSISTEMA ═══ -->
+<div class="sec" style="background:var(--d1);" id="ecosistema">
+  <div class="wrap">
+    <div class="sr">
+      <div class="eyebrow">05 · Visión completa</div>
+      <h2 class="sec-title">EL ECOSISTEMA <span class="serif">Amazing Drives</span></h2>
+      <p class="sec-lead">Las redes sociales son el primer paso. Esto es todo lo que se podría construir alrededor de Amazing Drives.</p>
+    </div>
+
+    <!-- BLOQUE 1: Plataformas digitales -->
+    <div class="sub-label sr" style="margin-top:3rem;">PLATAFORMAS DIGITALES</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Web</div><h3>DE CATÁLOGO A HUB EXPERIENCIAL</h3><p>La web actual cumple su función transaccional pero no transmite experiencia. Landing pages con vídeo y testimonios por producto, blog con crónicas de carrera y entrevistas a pilotos, integración del calendario con contenido previo y posterior a cada evento. Posicionamiento SEO para captar tráfico orgánico de quien busca trackdays, carreras de clásicos o motorsport amateur en España.</p>
+        <ul class="eco-actions"><li>Landing experiencial por producto: ADCC, Trackdays, Rutas, Academy</li><li>Blog / magazine con crónicas, perfiles y reportajes</li><li>SEO para keywords de descubrimiento</li><li>Galería y vídeo integrados en cada evento</li></ul>
+      </div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">App de telemetría</div><h3>EL ARMA SECRETA DE ENGAGEMENT</h3><p>La app de telemetría en directo es un diferenciador enorme que casi nadie conoce fuera de la comunidad. Con una landing dedicada, tutoriales de uso, integración en la comunicación de cada carrera y datos superpuestos en los highlights de YouTube, se convierte en un gancho brutal para followers remotos y en un argumento de venta para nuevos equipos y pilotos.</p>
+        <ul class="eco-actions"><li>Landing dedicada con tutorial y demo interactiva</li><li>"Sigue la carrera en directo" en cada evento</li><li>Datos de telemetría integrados en highlights YT</li><li>Contenido derivado: "La carrera de X en datos"</li></ul>
+      </div>
+    </div>
+
+    <!-- BLOQUE 2: Comunidad y membresías -->
+    <div class="sub-label sr" style="margin-top:3rem;">COMUNIDAD Y MEMBRESÍAS</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Membresías</div><h3>CONTENIDO QUE JUSTIFICA LA PERTENENCIA</h3><p>Las membresías tienen estructura clara (Foodie & Curves, Motorsport Addict, Classics Challenge, Amazing Driver) pero la comunicación no genera suficiente FOMO ni percepción de valor exclusivo. Contenido exclusivo para miembros, stories de eventos privados, campañas de captación alineadas con el calendario y testimonios reales como herramienta de conversión.</p>
+        <ul class="eco-actions"><li>Contenido exclusivo que solo ven los miembros</li><li>Stories de Wine Collectors, Desert Mirage → deseo de pertenecer</li><li>Campañas de captación post-evento (cuando la emoción está fresca)</li><li>Rediseño del naming y packaging de las membresías</li></ul>
+      </div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Comunidad digital</div><h3>LA COMUNIDAD VIVE MÁS ALLÁ DEL CIRCUITO</h3><p>Hoy la comunidad solo se encuentra en los eventos. Un espacio digital propio (grupo privado, Discord, app) donde los miembros hablen entre carreras, compartan contenido, organicen quedadas y se conozcan antes de llegar al paddock. Refuerza la fidelización y justifica la membresía.</p>
+        <ul class="eco-actions"><li>Espacio privado online para miembros</li><li>Canal de comunicación directa equipo ↔ comunidad</li><li>Foro de compraventa de coches y piezas</li><li>Contenido solo para la comunidad: telemetría, análisis de carreras</li></ul>
+      </div>
+    </div>
+
+    <!-- BLOQUE 3: Contenido y media -->
+    <div class="sub-label sr" style="margin-top:3rem;">CONTENIDO Y MEDIA</div>
+    <div class="g3 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Podcast</div><h3>PIT LANE TALK</h3><p>Conversaciones con pilotos, mecánicos, historias de coches. Formato bajo coste, alto engagement, posicionamiento como referentes del motorsport amateur. Publicación quincenal, disponible en Spotify y YouTube.</p></div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Newsletter</div><h3>EL BRIEFING DE LA COMUNIDAD</h3><p>Resumen mensual: próximos eventos, resultados, driver del mes, contenido exclusivo, ofertas de la tienda. Herramienta de retención, venta directa de inscripciones y canal propio no dependiente de algoritmos.</p></div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Documental</div><h3>LA TEMPORADA EN 30 MINUTOS</h3><p>Un vídeo largo al final de cada temporada ADCC contando la historia completa: los equipos, las batallas, el campeón, los momentos. Pieza de marca potentísima para captación de nuevos pilotos y sponsors.</p></div>
+    </div>
+
+    <!-- BLOQUE 4: Comunidad activa -->
+    <div class="sub-label sr" style="margin-top:3rem;">ENGAGEMENT Y CRECIMIENTO</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Ranking online</div><h3>EL CAMPEONATO EN DIRECTO</h3><p>Una sección en la web con clasificaciones en vivo, estadísticas por piloto, históricos por circuito y récords. Como la F1 pero para el ADCC. La app de telemetría ya genera los datos — solo hay que mostrarlos. Genera visitas recurrentes a la web y posiciona en buscadores.</p></div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Embajadores</div><h3>PROGRAMA DE EMBAJADORES</h3><p>Pilotos clave que generen contenido desde dentro: vlogs de su experiencia, stories desde el paddock, reviews de productos de la tienda. Son los micro-influencers naturales de la comunidad. A cambio: descuentos en inscripciones, visibilidad en los canales de AD, equipamiento.</p></div>
+    </div>
+
+    <!-- BLOQUE 5: Negocio -->
+    <div class="sub-label sr" style="margin-top:3rem;">NEGOCIO Y PARTNERSHIPS</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">AD Store</div><h3>LA TIENDA COMO EXPERIENCIA</h3><p>Integrar la tienda en el contenido: "El casco que lleva X", "Los neumáticos del equipo ganador". Contenido educativo para nuevos pilotos. Bundles especiales vinculados a membresías y primeras inscripciones.</p></div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Partnerships</div><h3>MARCAS AFINES</h3><p>Alianzas con marcas de relojes, ropa lifestyle, viajes, gastronomía. Encajan con el tono aspiracional y el perfil de la comunidad. Patrocinios integrados en contenido, no banners: experiencias conjuntas, producto en uso real.</p></div>
+    </div>
+
+    <!-- BLOQUE 5b: Activación de sponsors en contenido -->
+    <div class="sub-label sr" style="margin-top:3rem;">ACTIVACIÓN DE SPONSORS EN CONTENIDO</div>
+    <div class="sr d1">
+      <div class="card eco-card" style="padding:2.2rem;">
+        <p style="font-size:1.05rem;color:var(--tx-mid);margin-bottom:1.5rem;">El ADCC ya tiene una estructura de patrocinio clara con tres niveles (Title Partner, Official Supplier, Technical Partner). La estrategia de contenido puede multiplicar el valor de estos acuerdos integrando a los sponsors de forma natural en la narrativa, no como banners estáticos.</p>
+        <div class="g3" style="gap:1.2rem;">
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Menciones orgánicas</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Integrar sponsors en el copy de posts y vídeos de forma contextual: "Neumáticos X aguantando 4 horas de resistencia en Alcarràs", "El equipo Y confía en los frenos Z para las 24H".</p>
+          </div>
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Tags y visibilidad RRSS</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Menciones (@) en publicaciones relevantes, etiquetado en fotos donde el producto aparece en uso real, stories de producto en contexto de carrera. Visibilidad genuina, no forzada.</p>
+          </div>
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Contenido con marca</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Highlights de YouTube con logo de Title Partner en intro/outro, presencia de marca en thumbnails cuando es natural, menciones en descripción SEO con links.</p>
+          </div>
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Piezas dedicadas</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Contenido específico para sponsors: "¿Por qué el ADCC rueda con neumáticos X?", test de producto por un piloto real, behind the scenes de una asistencia técnica con producto del sponsor.</p>
+          </div>
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Reportes de valor</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Informe mensual para cada sponsor con métricas de exposición: impresiones, menciones, alcance de las publicaciones donde aparece. Profesionaliza la relación y justifica la renovación.</p>
+          </div>
+          <div style="padding:1.2rem;background:rgba(255,255,255,0.02);border-radius:var(--r);">
+            <div class="ht-label" style="color:var(--red-glow);">Activaciones en evento</div>
+            <p style="font-size:0.95rem;color:var(--tx-mid);line-height:1.55;">Cobertura en stories de los espacios del sponsor en paddock, entrega de premios con producto del sponsor, presencia visual en los recaps post-evento.</p>
+          </div>
+        </div>
+        <p style="font-size:0.92rem;color:var(--gold);font-weight:500;margin-top:1.2rem;">→ Con esta estructura, cada sponsor recibe valor medible de su inversión y la relación se profesionaliza para facilitar renovaciones y captar nuevos partners.</p>
+      </div>
+    </div>
+
+    <!-- BLOQUE 5c: Captación Trackdays y 24H -->
+    <div class="sub-label sr" style="margin-top:3rem;">CAPTACIÓN: TRACKDAYS Y 24 HORAS</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-r" style="margin-bottom:0.8rem;">Trackdays / Tests</div><h3>EL PRIMER PASO HACIA LA COMUNIDAD</h3><p>Los trackdays son la puerta de entrada natural a Amazing Drives, pero necesitan un empujón de comunicación específico para llenar plazas.</p>
+        <ul class="eco-actions"><li><strong>Contenido "primera vez"</strong>: reels POV de alguien que va por primera vez a un trackday — baja la barrera de entrada</li><li><strong>Testimonios de debutantes</strong>: "Nunca había pisado un circuito. Ahora ya he hecho 3 trackdays" — social proof real</li><li><strong>Campaña "Prueba antes de competir"</strong>: posicionar el trackday como el test drive natural antes de inscribirse en el ADCC</li><li><strong>Retargeting desde contenido ADCC</strong>: quien ve las carreras y aún no compite → CTA a trackdays como primer paso</li><li><strong>Paquete "Bautismo"</strong>: primer trackday + sesión de academy → experiencia completa de enganche</li></ul>
+      </div>
+      <div class="card eco-card"><div class="tag tag-r" style="margin-bottom:0.8rem;">24 Horas de Resistencia</div><h3>EL EVENTO QUE SE VENDE SOLO (CUANDO SE CUENTA BIEN)</h3><p>Las 24H en el Circuito de Andalucía es el evento más épico del calendario. El reto no es el producto — es que la comunicación transmita la magnitud de la experiencia.</p>
+        <ul class="eco-actions"><li><strong>Documental del año anterior</strong>: un vídeo largo (10-15 min) con la historia completa de las 24H anteriores — herramienta de venta brutal</li><li><strong>Countdown largo</strong>: campaña de 4-6 semanas con píldoras diarias: equipos confirmados, récords, anécdotas, estadísticas</li><li><strong>"Los números de las 24H"</strong>: infografías y reels con datos que impresionen — km totales, litros de combustible, horas de conducción por piloto</li><li><strong>Testimonios de veteranos</strong>: pilotos que ya han vivido las 24H contando qué se siente a las 3 de la madrugada en pista</li><li><strong>Apertura temprana con early bird</strong>: inscripción anticipada con precio especial + visibilidad extra para los primeros equipos confirmados</li><li><strong>Contenido "detrás de la logística"</strong>: cómo se monta una carrera de 24H, el equipo necesario, la planificación — genera respeto y deseo</li></ul>
+      </div>
+    </div>
+
+    <!-- BLOQUE 6: Branding -->
+    <div class="sub-label sr" style="margin-top:3rem;">MARCA Y POSICIONAMIENTO</div>
+    <div class="g2 sr d1">
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Rebranding</div><h3>UNA MARCA A LA ALTURA DE LA EXPERIENCIA</h3><p>Amazing Drives tiene una experiencia de producto increíble pero la imagen de marca no la refleja al completo. Un rebranding integral — logo, sistema visual, tipografía, paleta, aplicaciones — que transmita la misma emoción y exclusividad que se vive en los eventos. Que la marca sea tan memorable como la experiencia.</p>
+        <ul class="eco-actions"><li>Nuevo sistema de identidad visual completo</li><li>Familia visual coherente para todos los productos (ADCC, Alpine Madness, Wine Collectors, Desert Mirage...)</li><li>Aplicaciones: web, RRSS, equipamiento, señalética, merchandising</li><li>Brand guidelines para uso interno y partners</li></ul>
+      </div>
+      <div class="card eco-card"><div class="tag tag-g" style="margin-bottom:0.8rem;">Naming</div><h3>PRODUCTOS QUE SE VENDEN SOLOS</h3><p>Rediseño del naming y packaging de membresías y productos. Los nombres actuales son funcionales pero podrían transmitir más aspiracionalidad. Que cada producto de Amazing Drives tenga un nombre, una estética y una promesa clara que haga que la gente quiera comprarlo antes de saber qué incluye.</p>
+        <ul class="eco-actions"><li>Naming de membresías más aspiracional y comercial</li><li>Packaging visual para cada experiencia</li><li>Sistema de nomenclatura coherente para todo el portfolio</li><li>Landing de venta diseñada para conversión</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Documento confidencial · Propuesta estratégica para Amazing Drives · 2026</p>
+</div>
+
+<script>
+const prog=document.getElementById('prog');
+window.addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';});
+const srs=document.querySelectorAll('.sr');
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+srs.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
